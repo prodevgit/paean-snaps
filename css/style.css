@@ -7734,6 +7734,47 @@ h1, h2, h3, h4, h5,
   .photography-entry:hover .text, .photography-entry:focus .text {
     opacity: 1; }
 
+.photography-entry-vh {
+  height: 500px;
+  display: block;
+  z-index: 0;
+  position: relative;
+  margin-bottom: 30px; }
+  .photography-entry-vh .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #000000;
+    opacity: 0;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .photography-entry-vh .text {
+    opacity: 0;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .photography-entry-vh .text h3 {
+      color: #fff;
+      font-size: 20px; }
+    .photography-entry-vh .text span.tag {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: rgba(255, 255, 255, 0.8); }
+  .photography-entry-vh:hover .overlay, .photography-entry-vh:focus .overlay {
+    opacity: .7; }
+  .photography-entry-vh:hover .text, .photography-entry-vh:focus .text {
+    opacity: 1; }
+
+
 .owl-carousel {
   position: relative; }
   .owl-carousel .owl-item {
